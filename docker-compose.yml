@@ -1,0 +1,6 @@
+services:
+  validate:
+    build: .
+    env_file:
+      - .env
+    command: ["validate", "--file", "examples/topology.json"]
